@@ -1,0 +1,12 @@
+-Oz
+-sUSE_WEBGL2=1 -sMAX_WEBGL_VERSION=2 -lGL
+-v
+-fwasm-exceptions
+-DDISABLE_PERFTRACING_LISTEN_PORTS=1
+-DLINK_ICALLS=1
+-DGEN_PINVOKE=1
+-emit-llvm
+"-I/home/joel/code/projetHetic/HeticStream.UI/obj/Release/net8.0/browser-wasm/wasm/for-publish"
+"-I/root/.dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/8.0.14/runtimes/browser-wasm/native/include/mono-2.0"
+"-I/root/.dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/8.0.14/runtimes/browser-wasm/native/include/wasm"
+-g

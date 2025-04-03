@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dCDkLReagMEyNBmp7BbpEubQaNUHH5lkY1jvk4GgjehftsOiAk34glU0tobPPRW3hCnG9vDaKrhjpq8t/Sirvw==",
+  "success": true,
+  "projectFilePath": "/home/joel/code/projetHetic/HeticStream.Services/HeticStream.Services.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.3/microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.3/microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

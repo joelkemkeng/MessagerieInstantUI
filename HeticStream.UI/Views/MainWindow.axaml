@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:HeticStream.UI.ViewModels"
+        xmlns:views="using:HeticStream.UI.Views"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        x:Class="HeticStream.UI.Views.MainWindow"
+        x:DataType="vm:MainViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Hetic Stream"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent"
+        ExtendClientAreaToDecorationsHint="True"
+        WindowStartupLocation="CenterScreen"
+        MinWidth="800" MinHeight="600">
+
+    <Design.DataContext>
+        <vm:MainViewModel/>
+    </Design.DataContext>
+
+    <Panel>
+        <!-- Fond avec effet acrylic -->
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="#1E1E1E"
+                    TintOpacity="1"
+                    MaterialOpacity="0.7" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+
+        <!-- Contenu principal -->
+        <Grid>
+            <!-- Écran de connexion (seul écran pour la Phase 1) -->
+            <views:LoginView DataContext="{Binding LoginViewModel}" />
+
+            <!-- Modal de notification -->
+            <Panel IsVisible="{Binding LoginViewModel.IsNotificationVisible}">
+                <Rectangle Fill="#80000000" />
+                <views:NotificationView DataContext="{Binding LoginViewModel}"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center" />
+            </Panel>
+        </Grid>
+    </Panel>
+
+</Window>

@@ -1,0 +1,59 @@
+<!--
+  HETIC: Vue pour le modal de notification
+-->
+
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:HeticStream.UI.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="200"
+             x:Class="HeticStream.UI.Views.NotificationView"
+             x:DataType="vm:LoginViewModel">
+
+  <Border Background="#2F3136" 
+          CornerRadius="8" 
+          BoxShadow="0 4 20 0 #40000000" 
+          Padding="20" 
+          MaxWidth="400">
+    <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="*,Auto">
+      
+      <!-- Titre -->
+      <TextBlock Grid.Row="0" Grid.Column="0"
+                 Text="{Binding NotificationTitle}" 
+                 FontSize="18" 
+                 FontWeight="Bold" 
+                 Foreground="{Binding IsError, Converter={x:Static ObjectConverters.IsNotNull}, 
+                           ConverterParameter='#f04747', FallbackValue='#43b581'}"/>
+      
+      <!-- Bouton de fermeture -->
+      <Button Grid.Row="0" Grid.Column="1"
+              Command="{Binding CloseNotificationCommand}"
+              Content="✕"
+              Padding="5"
+              Background="Transparent"
+              Foreground="Gray"
+              VerticalAlignment="Top"
+              HorizontalAlignment="Right"/>
+      
+      <!-- Message -->
+      <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                 Text="{Binding NotificationMessage}"
+                 TextWrapping="Wrap"
+                 Margin="0,15,0,15"
+                 Opacity="0.9"/>
+      
+      <!-- Bouton OK -->
+      <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+              Command="{Binding CloseNotificationCommand}"
+              Content="OK"
+              HorizontalAlignment="Center"
+              Width="100"
+              Height="35"
+              Background="{Binding IsError, Converter={x:Static ObjectConverters.IsNotNull}, 
+                          ConverterParameter='#f04747', FallbackValue='#43b581'}"
+              Foreground="White"
+              CornerRadius="5"/>
+    </Grid>
+  </Border>
+</UserControl>

@@ -1,0 +1,15 @@
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/HeticStream.Services.csproj.AssemblyReference.cache
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/HeticStream.Services.GeneratedMSBuildEditorConfig.editorconfig
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/HeticStream.Services.AssemblyInfoInputs.cache
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/HeticStream.Services.AssemblyInfo.cs
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/HeticStream.Services.csproj.CoreCompileInputs.cache
+/home/joel/code/projetHetic/HeticStream.Services/bin/Debug/net8.0/HeticStream.Services.deps.json
+/home/joel/code/projetHetic/HeticStream.Services/bin/Debug/net8.0/HeticStream.Services.dll
+/home/joel/code/projetHetic/HeticStream.Services/bin/Debug/net8.0/HeticStream.Services.pdb
+/home/joel/code/projetHetic/HeticStream.Services/bin/Debug/net8.0/HeticStream.Core.dll
+/home/joel/code/projetHetic/HeticStream.Services/bin/Debug/net8.0/HeticStream.Core.pdb
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/HeticStream.Services.csproj.CopyComplete
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/HeticStream.Services.dll
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/refint/HeticStream.Services.dll
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/HeticStream.Services.pdb
+/home/joel/code/projetHetic/HeticStream.Services/obj/Debug/net8.0/ref/HeticStream.Services.dll

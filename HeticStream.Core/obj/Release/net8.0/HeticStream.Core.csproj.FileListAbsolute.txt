@@ -1,0 +1,11 @@
+/home/joel/code/projetHetic/HeticStream.Core/bin/Release/net8.0/HeticStream.Core.deps.json
+/home/joel/code/projetHetic/HeticStream.Core/bin/Release/net8.0/HeticStream.Core.dll
+/home/joel/code/projetHetic/HeticStream.Core/bin/Release/net8.0/HeticStream.Core.pdb
+/home/joel/code/projetHetic/HeticStream.Core/obj/Release/net8.0/HeticStream.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/joel/code/projetHetic/HeticStream.Core/obj/Release/net8.0/HeticStream.Core.AssemblyInfoInputs.cache
+/home/joel/code/projetHetic/HeticStream.Core/obj/Release/net8.0/HeticStream.Core.AssemblyInfo.cs
+/home/joel/code/projetHetic/HeticStream.Core/obj/Release/net8.0/HeticStream.Core.csproj.CoreCompileInputs.cache
+/home/joel/code/projetHetic/HeticStream.Core/obj/Release/net8.0/HeticStream.Core.dll
+/home/joel/code/projetHetic/HeticStream.Core/obj/Release/net8.0/refint/HeticStream.Core.dll
+/home/joel/code/projetHetic/HeticStream.Core/obj/Release/net8.0/HeticStream.Core.pdb
+/home/joel/code/projetHetic/HeticStream.Core/obj/Release/net8.0/ref/HeticStream.Core.dll
