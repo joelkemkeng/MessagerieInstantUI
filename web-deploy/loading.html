@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HETIC-STREAM</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #36393F;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 {
+            color: #7289DA;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            opacity: 0.8;
+            margin-bottom: 25px;
+        }
+        .loader {
+            width: 80px;
+            height: 80px;
+            border: 5px solid rgba(114, 137, 218, 0.3);
+            border-radius: 50%;
+            border-top-color: #7289DA;
+            margin: 30px auto;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .credits {
+            font-size: 14px;
+            margin-top: 50px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HETIC-STREAM</h1>
+        <p>Chargement de l'application de messagerie...</p>
+        <div class="loader"></div>
+        <p>L'application démarre dans quelques instants</p>
+        <p class="credentials">
+            Données de connexion:<br>
+            <strong>Email:</strong> demo@hetic.net<br>
+            <strong>Mot de passe:</strong> password123
+        </p>
+        <div class="credits">© 2025 HETIC-STREAM</div>
+    </div>
+    <script>
+        // Redirection vers l'application principale après un court délai
+        setTimeout(() => {
+            window.location.href = 'index.html';
+        }, 2500);
+    </script>
+</body>
+</html>
