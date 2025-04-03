@@ -72,7 +72,7 @@ En mode simulation (API_ENABLED=false), vous pouvez vous connecter avec les iden
 - .NET SDK 8.0 ou supérieur
 - IDE recommandé : Visual Studio, Visual Studio Code ou Rider
 
-### Étapes
+### Exécution sous Windows (application native)
 1. Cloner le dépôt :
 ```
 git clone [url-du-depot]
@@ -88,6 +88,30 @@ dotnet build
 ```
 dotnet run --project HeticStream.UI
 ```
+
+### Exécution en mode Web
+1. S'assurer que le SDK .NET 8.0 est installé avec le support WebAssembly :
+```
+dotnet workload install wasm-tools-net8
+dotnet workload restore
+```
+
+2. Compiler la version web :
+```
+dotnet publish HeticStream.UI.Browser -c Release
+```
+
+3. Lancer l'application web :
+   - **Windows** : Exécuter le fichier `web-deploy/launch-windows.bat`
+   - **Linux/Mac** : Exécuter le script `./deploy-web.sh`
+
+L'application sera accessible :
+- Avec Node.js : http://localhost:8090
+- Avec Python : http://localhost:8000
+
+Identifiants de connexion :
+- Email : demo@hetic.net
+- Mot de passe : password123
 
 ## Développement
 

@@ -2,7 +2,10 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 8080;
+// Accept port from command line argument (--port=XXXX), environment variable, or default to 8080
+const PORT = process.env.PORT || 
+  process.argv.find(arg => arg.startsWith('--port='))?.split('=')[1] || 
+  8080;
 const MIME_TYPES = {
   '.html': 'text/html',
   '.js': 'text/javascript',

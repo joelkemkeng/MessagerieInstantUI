@@ -4,25 +4,33 @@ Ce dossier contient une version web de l'application Hetic-Stream, prête à êt
 
 ## Déploiement rapide
 
-### Option 1: Déploiement local
+### Option 1: Déploiement local sous Windows
+
+1. Exécuter simplement le fichier `launch-windows.bat`
+
+L'application sera automatiquement lancée dans votre navigateur :
+- Avec Node.js : http://localhost:8090
+- Avec Python : http://localhost:8000
+
+### Option 2: Déploiement local manuel
 
 1. Si vous avez Node.js installé:
    ```
-   node server.js
+   node server.js --port=8090
    ```
-   L'application sera disponible sur http://localhost:8080
+   L'application sera disponible sur http://localhost:8090
 
 2. Si vous préférez Python:
    ```
-   python -m http.server 8080
+   python -m http.server 8000
    ```
    ou
    ```
-   python3 -m http.server 8080
+   python3 -m http.server 8000
    ```
-   L'application sera disponible sur http://localhost:8080
+   L'application sera disponible sur http://localhost:8000
 
-### Option 2: Déploiement sur des services d'hébergement
+### Option 3: Déploiement sur des services d'hébergement
 
 1. **Netlify**:
    - Déposez simplement ce dossier sur Netlify

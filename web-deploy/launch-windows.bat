@@ -9,13 +9,13 @@ WHERE node >nul 2>nul
 IF %ERRORLEVEL% EQU 0 (
     echo Node.js détecté, démarrage du serveur...
     echo.
-    echo Application accessible sur http://localhost:8080
+    echo Application accessible sur http://localhost:8090
     echo.
     echo Email: demo@hetic.net
     echo Mot de passe: password123
     echo.
-    start http://localhost:8080/loading.html
-    node server.js
+    start http://localhost:8090/loading.html
+    node server.js --port=8090
     GOTO :EOF
 )
 
