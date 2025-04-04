@@ -15,7 +15,7 @@ IF %ERRORLEVEL% EQU 0 (
     echo Mot de passe: password123
     echo.
     start http://localhost:8090/loading.html
-    node server.js --port=8090
+    node "%~dp0server.js" --port=8090
     GOTO :EOF
 )
 
