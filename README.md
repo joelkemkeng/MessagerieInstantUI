@@ -98,7 +98,12 @@ dotnet workload restore
 
 2. Compiler la version web :
 ```
-dotnet publish HeticStream.UI.Browser -c Release
+dotnet publish HeticStream.UI -c Release -r browser-wasm
+```
+
+3. Copier les fichiers (si nécessaire) :
+```
+xcopy bin\Release\net8.0\browser-wasm\publish\* web-deploy\ /E /I /Y
 ```
 
 3. Lancer l'application web :

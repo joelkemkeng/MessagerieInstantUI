@@ -24,10 +24,12 @@ Cette commande ajoute à .NET 8 la capacité de compiler vers WebAssembly.
 Dans le dossier du projet, exécutez:
 
 ```
-dotnet publish HeticStream.UI.Browser -c Release
+dotnet publish HeticStream.UI -c Release -r browser-wasm
 ```
 
-Cette commande génère la version web de l'application dans le dossier `web-deploy`.
+Cette commande génère la version web de l'application dans le dossier `bin/Release/net8.0/browser-wasm/publish`.
+
+Si le dossier `web-deploy` n'existe pas déjà, créez-le et copiez tout le contenu du dossier `bin/Release/net8.0/browser-wasm/publish` vers `web-deploy`.
 
 ### Étape 3: Lancer l'application
 
